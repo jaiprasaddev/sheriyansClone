@@ -1,0 +1,197 @@
+@font-face {
+  font-family: nue-light;
+  src: url(./assets/fonts/NeueMachina-Light_gwWCZxVuQl.ttf);
+}
+@font-face {
+  font-family: nue-bold;
+  src: url(./assets/fonts/NeueMachina-Bold_WaMOsLX9Z9.ttf);
+}
+@font-face {
+  font-family: hell;
+  src: url(./assets/fonts/HelveticaNowDisplay-Light_M4nzWhve6k_k7HolyzL10.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-image: url("data:image/svg+xml,%3Csvg width='1512' height='6397' viewBox='0 0 1512 6397' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_243_2)'%3E%3Crect width='1512' height='6397' fill='%230c0c0c' /%3E%3Cg opacity='0.4' filter='url(%23filter0_f_243_2)'%3E%3Cpath d='M387.38 137.553C355.297 -107.774 513.625 -371.892 752.935 -403.188C992.246 -434.485 1087.35 -273.117 1119.44 -27.7906C1151.52 217.536 993.208 -36.6224 796.88 -10.947C557.569 20.3495 419.463 382.88 387.38 137.553Z' fill='%2324cfa7' /%3E%3C/g%3E%3Cg filter='url(%23filter1_f_243_2)'%3E%3Ccircle cx='15' cy='3176' r='185' fill='%2324cfa7' /%3E%3C/g%3E%3Cg filter='url(%23filter2_f_243_2)'%3E%3Ccircle cx='1275' cy='840' r='64' fill='%2324cfa7' /%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_243_2' x='239.258' y='-551.062' width='1028.33' height='917.31' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix' /%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' /%3E%3CfeGaussianBlur stdDeviation='72' result='effect1_foregroundBlur_243_2' /%3E%3C/filter%3E%3Cfilter id='filter1_f_243_2' x='-774' y='2387' width='1578' height='1578' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix' /%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' /%3E%3CfeGaussianBlur stdDeviation='302' result='effect1_foregroundBlur_243_2' /%3E%3C/filter%3E%3Cfilter id='filter2_f_243_2' x='967' y='532' width='616' height='616' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix' /%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' /%3E%3CfeGaussianBlur stdDeviation='122' result='effect1_foregroundBlur_243_2' /%3E%3C/filter%3E%3CclipPath id='clip0_243_2'%3E%3Crect width='1512' height='6397' fill='white' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 4rem;
+}
+main .view1 .top {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+main .view1 .top .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .view1 .top .nav-left img {
+  height: 2.5rem;
+}
+main .view1 .top .nav-left a {
+  text-decoration: none;
+  color: white;
+  font-family: nue-light;
+}
+
+main .view1 .top .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+main .view1 .top .nav-right .bold {
+  font-family: nue-bold;
+  font-size: 17px;
+}
+main .view1 .top .nav-right a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  font-family: nue-light;
+}
+main .view1 .top .nav-right a button {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  background: #27DFB3;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.view1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+.view1 .middle {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: clamp(10px, 1.2vw, 1rem);
+  position: relative;
+  font-family: nue-light;
+  margin-top: 3rem;
+}
+.view1 .middle h1 {
+  line-height: 0.845em;
+  font-size: 5rem;
+  font-weight: 300 !important;
+}
+.view1 .middle h1 .teach {
+  color: #27DFB3;
+}
+.view1 .middle h1 i {
+  font-family: hell;
+  font-weight: 100 !important;
+}
+.view1 .middle button {
+  background: #27DFB3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+.view1 .middle .side-text {
+  font-size: 0.95em;
+  width: 14em;
+  text-align: left;
+  font-weight: 300;
+  line-height: 1.2e;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(80%, -60%);
+  font-family: hell;
+}
+.view1 .middle .side-text span {
+  color: #27DFB3;
+}
+
+.view1 .bottom {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.view1 .bottom .texts {
+  padding-top: 1em;
+  display: flex;
+  font-size: 1.4em;
+  gap: 5.4em;
+}
+.view1 .bottom .texts .text {
+  text-align: center;
+}
+.view1 .bottom .texts .text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.view1 .bottom .texts .text p {
+  font-family: nue-light;
+}
+
+.view2 {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white;
+  gap: 4rem;
+  align-items: center;
+}
+.view2 h1 {
+  font-family: nue-light;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.view2 h1 span {
+  color: #27DFB3;
+}
+.view2 .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view2 .video-container .video {
+  aspect-ratio: 16/9;
+  position: relative;
+  max-width: 68rem;
+  border-radius: 1.7rem;
+  overflow: hidden;
+  width: 100%;
+  border: none;
+}
+.view2 button {
+  background: #27DFB3;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 60px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=style.css.map */
