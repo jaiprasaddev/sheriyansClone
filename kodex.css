@@ -1,0 +1,186 @@
+@font-face {
+  font-family: nue-light;
+  src: url(./assets/fonts/NeueMachina-Light_gwWCZxVuQl.ttf);
+}
+@font-face {
+  font-family: nue-bold;
+  src: url(./assets/fonts/NeueMachina-Bold_WaMOsLX9Z9.ttf);
+}
+@font-face {
+  font-family: gradual-mid;
+  src: url(./assets/kodexFont/BwGradualDEMO-Medium.otf);
+}
+@font-face {
+  font-family: gradual-reg;
+  src: url(./assets/kodexFont/BwGradualDEMO-Regular.otf);
+}
+@font-face {
+  font-family: urbanist-bold;
+  src: url(./assets/kodexFont/Urbanist-Bold.ttf);
+}
+@font-face {
+  font-family: urbanist-mid;
+  src: url(./assets/kodexFont/Urbanist-Medium.ttf);
+}
+@font-face {
+  font-family: urbanist-reg;
+  src: url(./assets/kodexFont/Urbanist-Regular.ttf);
+}
+@font-face {
+  font-family: urbanist-thin;
+  src: url(./assets/kodexFont/Urbanist-Thin.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+.hero {
+  padding: 50px;
+}
+.hero .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.hero .navbar .nav-left {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 2px;
+  font-family: nue-light;
+  line-height: 1;
+}
+.hero .navbar .nav-left span {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.hero .navbar .nav-left img {
+  height: 2.5rem;
+}
+.hero .navbar .nav-mid {
+  margin-right: 110px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 10px 40px;
+  border-radius: 25px;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.03) 0%, rgba(180, 180, 180, 0.12) 70%, rgba(200, 200, 200, 0.18) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.079);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.03);
+}
+.hero .navbar .nav-mid a {
+  text-decoration: none;
+  color: #5C5C5C;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.hero .navbar .nav-mid a:hover {
+  color: white;
+}
+.hero .navbar .nav-mid:hover {
+  background: rgba(200, 200, 200, 0.104);
+}
+.hero .navbar .nav-right {
+  padding: 10px 40px;
+  border-radius: 25px;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.03) 0%, rgba(180, 180, 180, 0.12) 70%, rgba(200, 200, 200, 0.18) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.079);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.03);
+  transition: all ease 0.5s;
+}
+.hero .navbar .nav-right a {
+  text-decoration: none;
+  color: #5C5C5C;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.hero .navbar .nav-right:hover {
+  background: rgba(200, 200, 200, 0.104);
+}
+.hero .navbar .nav-right:hover a {
+  color: white;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.hero .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: radial-gradient(circle at center, rgba(88, 87, 87, 0.058) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.9) 100%), rgba(0, 0, 0, 0.6);
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero .content h1 {
+  font-size: 7.5rem;
+  font-family: gradual-reg;
+  font-weight: 500;
+  background: linear-gradient(to right, #434343 0%, #ffffff 50%, #434343 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+.hero .content p {
+  font-size: 1.9rem;
+  font-family: urbanist-reg;
+  margin-bottom: 4rem;
+}
+.hero .content button {
+  background: #000;
+  color: #ffffff;
+  padding: 1.1rem 3rem;
+  border-radius: 50px;
+  border: 0.2px solid rgba(255, 255, 255, 0.429);
+  font-size: 1.2rem;
+}
+
+.hero svg {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+}/*# sourceMappingURL=kodex.css.map */
