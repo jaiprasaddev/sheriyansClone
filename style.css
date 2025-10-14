@@ -163,6 +163,7 @@ main .view1 .top .nav-right a button {
   color: white;
   gap: 4rem;
   align-items: center;
+  height: 100%;
 }
 .view2 h1 {
   font-family: nue-light;
@@ -173,19 +174,14 @@ main .view1 .top .nav-right a button {
 .view2 h1 span {
   color: #27DFB3;
 }
-.view2 .video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.view2 .youtube-video {
+  height: 60%;
+  width: 60%;
 }
-.view2 .video-container .video {
-  aspect-ratio: 16/9;
-  position: relative;
-  max-width: 68rem;
-  border-radius: 1.7rem;
-  overflow: hidden;
+.view2 .youtube-video iframe {
   width: 100%;
-  border: none;
+  height: 100%;
+  border-radius: 1em;
 }
 .view2 button {
   background: #27DFB3;
@@ -194,4 +190,227 @@ main .view1 .top .nav-right a button {
   padding: 10px 60px;
   font-size: 20px;
   margin-bottom: 50px;
+}
+
+.courses {
+  color: white;
+  width: 100%;
+  margin-top: 5rem;
+}
+.courses section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.courses section h1 {
+  font-size: 2.5rem;
+  font-family: nue-light;
+  font-weight: 500;
+}
+.courses section .course-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+.courses section .course-container .course {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 2rem;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  justify-content: space-between;
+}
+.courses section .course-container .course .top {
+  flex-grow: 1;
+  width: 100%;
+  border-radius: 1rem;
+  background: #171717;
+}
+.courses section .course-container .course .top .img-wrapper {
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem;
+}
+.courses section .course-container .course .top .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.courses section .course-container .course .content-wrapper {
+  flex-grow: 1;
+  justify-content: end;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  font-family: hell;
+  padding: 1.3rem 1rem;
+}
+.courses section .course-container .course .content-wrapper .name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.courses section .course-container .course .content-wrapper .name span:nth-child(1) {
+  font-size: 1.4rem;
+}
+.courses section .course-container .course .content-wrapper .name span:nth-child(2) {
+  font-size: 1rem;
+  background-color: #2C2C2C;
+  padding: 4px 13px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.4rem;
+}
+.courses section .course-container .course .content-wrapper .price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.courses section .course-container .course .content-wrapper .price .left-price {
+  display: flex;
+  flex-direction: column;
+}
+.courses section .course-container .course .content-wrapper .price .left-price span:nth-child(1) {
+  color: #27DFB3;
+  font-size: 1rem;
+}
+.courses section .course-container .course .content-wrapper .price .left-price span:nth-child(2) {
+  font-size: 1.4rem !important;
+}
+.courses section .course-container .course .content-wrapper .price .left-price span:nth-child(2) span {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: #7c7c7c;
+  margin-left: 6px;
+}
+.courses section .course-container .course .content-wrapper .price .offer {
+  background-color: white;
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 0.3rem;
+}
+.courses .grey {
+  background: #9E9E9E;
+  color: #2C2C2C;
+}
+.courses button {
+  background: #27DFB3;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.view4 {
+  color: white;
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.view4 .top h1 {
+  font-family: nue-light;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.view4 .top h1 span {
+  color: #27DFB3;
+}
+.view4 img {
+  width: 80%;
+  margin-bottom: 3rem;
+}
+.view4 .bottom button {
+  background: #27DFB3;
+  border: none;
+  padding: 0.8rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+footer {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 5rem 0;
+  margin-top: 15rem;
+  font-family: hell;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: #27DFB3;
+}
+footer .left {
+  line-height: 2;
+}
+footer .left img {
+  height: 4rem;
+}
+footer .left a {
+  font-size: 30px;
+}
+footer .company {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+footer .company h1 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+footer .community {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  justify-content: flex-start;
+}
+footer .community h1 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+footer .right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+footer .right h1 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }/*# sourceMappingURL=style.css.map */
