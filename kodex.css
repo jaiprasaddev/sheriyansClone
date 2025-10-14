@@ -39,12 +39,12 @@
 html, body {
   width: 100%;
   height: 100%;
+  background-color: #000;
 }
 
 main {
   height: 100%;
   width: 100%;
-  background: #000;
 }
 
 .hero {
@@ -183,4 +183,71 @@ main {
   position: absolute;
   z-index: 99;
   bottom: 0;
+}
+
+.view2 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.view2 .view2-container {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
+.view2 .view2-container .slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding-top: 5rem;
+}
+.view2 .view2-container .slider .slide-track {
+  display: flex;
+  gap: 4rem;
+  will-change: transform;
+}
+.view2 .view2-container .slider .slide-track img {
+  height: 150px;
+  width: 250px;
+}
+.view2 .view2-container .content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-top: 150px;
+}
+.view2 .view2-container .content .left {
+  font-family: gradual-reg;
+}
+.view2 .view2-container .content .right .right-top {
+  font-family: gradual-reg;
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.view2 .view2-container .content .right .right-top span {
+  color: #9CA3AF;
+}
+.view2 .view2-container .content .right .right-bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  gap: 70px;
+}
+.view2 .view2-container .content .right .right-bottom h1 {
+  font-family: gradual-mid;
+  font-size: 70px;
+  letter-spacing: 5px;
+}
+.view2 .view2-container .content .right .right-bottom p {
+  font-family: gradual-reg;
+  color: #9CA3AF;
+  font-size: 20px;
 }/*# sourceMappingURL=kodex.css.map */
